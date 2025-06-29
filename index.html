@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Lista de Compras</title>
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+  <header>
+    <nav class="flex desktop-only">
+      <a class="logo flex" href="#"><img src="./assets/icons/logo.svg" alt=""></a>
+    </nav>
+    <div id="head">
+        <div id="back">
+          <a href="#"><img src="./assets/icons/back.svg" alt=""></a>
+        </div>
+      </div>
+      
+        <h1>
+          Compras da Semana
+        </h1>
+  </header>
+
+  <main>
+    <section id="input" class="flex">
+      <div class="input-container flex">
+        <input type="text" id="itemInput" placeholder="Adicionar um novo item">
+        <button id="add-item-button">Adicionar item</button>
+      </div>
+    </section>
+
+    <section id="list" class="flex">
+      <div class="lista-compras">
+        <div class="item flex">
+          <input type="checkbox" id="item1" />
+          <label for="item1">Leite</label>
+          <img class="junk" src="/assets/junk.svg" alt="delete">
+        </div>
+
+        <div class="item">
+          <input type="checkbox" id="item2" />
+          <label for="item2">Pão</label>
+          <img class="junk" src="/assets/junk.svg" alt="delete">
+        </div>
+
+        <div class="item">
+          <input type="checkbox" id="item3" />
+          <label for="item3">Ovos</label>
+          <img class="junk" src="/assets/junk.svg" alt="delete">
+        </div>
+      </div>
+    </section>
+
+    <div id="aviso-remocao" class="aviso" style="display: none;">
+      <img src="/assets/atenttion.svg" alt="">
+      O item foi removido da lista.
+      <img class="delet" src="/assets/delet.svg" alt="">
+    </div>
+
+  </main>
+
+  <script src="/index.js"></script>
+</body>
+</html>

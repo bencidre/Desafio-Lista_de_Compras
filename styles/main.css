@@ -1,0 +1,53 @@
+main {
+  margin-top: 2.75rem;
+  margin-bottom: 2rem;
+}
+
+#input {
+  justify-content: center;
+}
+
+.input-container {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+input {
+  outline: 0;
+  justify-self: center;
+  color: var(--content-primary);
+  border: 1.5px solid var(--border-primary);
+  border-radius: 0.5rem;
+
+  background-color: white;
+  padding: .5rem 4rem;
+
+  font-family: var(--font-family);
+}
+
+input:hover {
+  border-color: var(--border-hover);
+}
+
+input:focus {
+  border-color: var(--color-brand);
+}
+
+@media (width > 768px) {
+  main {
+    justify-items: center;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  input {
+    width: 451px;
+    padding: 0 .5rem;
+  }
+}

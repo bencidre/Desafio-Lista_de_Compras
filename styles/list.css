@@ -1,0 +1,65 @@
+#list {
+  margin-top: 2rem;
+  padding: .5rem;
+  justify-content: center;
+}
+
+.lista-compras {
+  font: var(--paragraph);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 310px;
+  & img {
+    width: 1rem;
+  }
+  & img:hover {
+    cursor: pointer;
+  }
+}
+
+.lista-compras h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: .5rem;
+}
+
+.item input[type="checkbox"] {     
+  width: 16px;
+  height: 16px;        
+  margin-right: .4rem;
+}
+
+
+.item label {
+  cursor: pointer;
+  flex: 1;
+}
+
+/* Estilo quando o item for marcado */
+.item input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: gray;
+}
+
+@media (width > 768px) {
+  #list {
+    margin-top: 2rem;
+    padding: .5rem;
+    width: 700px;
+    justify-content: unset;
+  }
+  
+  .lista-compras {
+    width: 610px;
+    left: 35px;
+    position: relative;
+  }
+}

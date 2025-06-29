@@ -1,0 +1,27 @@
+button {
+  height: 2.25rem;
+  background-color: var(--color-brand);
+  border: none;
+  border-radius: 0.5rem;
+  color: #f1f2f6;
+  font-family: var(--font-family);
+  font: var(--label);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-brand-hover);
+  }
+
+  &:disabled {
+    background-color: #1f2151;
+    cursor: not-allowed;
+  }
+}
+
+@media (width > 768px) {
+  button {
+    width: 150px;
+    height: 44px;
+  }
+}

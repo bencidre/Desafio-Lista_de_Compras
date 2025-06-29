@@ -1,0 +1,60 @@
+nav {
+  justify-content: center;
+  padding-block: 1.2rem;
+}
+
+#back {
+  margin-top: 4.875rem;
+}
+
+h1 {
+  font: var(--title);
+  color: var(--content-primary);
+  padding-top: 1rem;
+  position: relative;
+  justify-self: initial;
+  left: 110px;
+  position: absolute;
+  padding: 10px 0;
+  white-space: nowrap;
+}
+
+#back {
+  padding: 0px 78px;
+}
+
+
+
+@media (width > 768px) {
+  header {
+    position: relative;
+
+    & #head {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    & h1 {
+      left: 45px;
+      position: absolute;
+      padding: 10px 0;
+    }
+    & #back {
+      position: absolute;
+      top: 30px;
+      left: 45px;
+      padding: 10px 0;
+    }
+    & nav {
+      margin-bottom: 4rem;
+    }
+  }
+  .desktop-only {
+    display: flex;
+  }
+  .input-container {
+  display: flex;
+  flex-direction: row;
+  }
+}
