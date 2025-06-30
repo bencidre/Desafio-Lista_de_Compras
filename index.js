@@ -49,7 +49,7 @@ addButton.addEventListener('click', () => {
   label.textContent = valor;
 
   const img = document.createElement('img');
-  img.src = '/assets/junk.svg';
+  img.src = './assets/junk.svg';
   img.alt = 'delete';
   img.className = 'junk';
 
